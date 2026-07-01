@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <Background>
       <div className="flex flex-col items-center justify-center gap-12 z-10 text-white">
-        <h1 className="text-5xl md:text-6xl font-moralana uppercase tracking-widest bg-clip-text text-transparent bg-gradient-to-b from-white to-white/75 drop-shadow-lg select-none py-4 leading-normal">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-moralana uppercase tracking-wide sm:tracking-widest text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-white/75 drop-shadow-lg select-none py-4 leading-normal">
           Deployment in...
         </h1>
         
