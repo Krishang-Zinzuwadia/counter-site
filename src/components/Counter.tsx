@@ -57,7 +57,7 @@ export default function Counter({
           {digits.map((digit, i) => (
             <div
               key={i}
-              className={`relative overflow-hidden flex items-center justify-center bg-white/10 backdrop-blur-md border rounded-2xl transition-all duration-300 w-10 h-15 sm:w-16 sm:h-24 md:w-20 md:h-28 shadow-lg ${
+              className={`relative overflow-hidden flex items-center justify-center bg-white/10 backdrop-blur-md border rounded-2xl transition-all duration-300 w-9 h-15 sm:w-16 sm:h-24 md:w-20 md:h-28 shadow-lg ${
                 isWarning
                   ? "border-red-500/50 text-red-500 shadow-[0_0_15px_rgba(239,68,68,0.3)] animate-pulse-warning"
                   : "border-[#EEDEC5]/20 text-[#EEDEC5]"
