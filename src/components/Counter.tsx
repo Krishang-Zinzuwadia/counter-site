@@ -57,19 +57,19 @@ export default function Counter({
           {digits.map((digit, i) => (
             <div
               key={i}
-              className={`relative overflow-hidden flex items-center justify-center bg-white/10 backdrop-blur-md border rounded-2xl transition-all duration-300 w-11 h-16 sm:w-18 sm:h-26 md:w-20 md:h-28 shadow-lg ${
+              className={`relative overflow-hidden flex items-center justify-center bg-white/10 backdrop-blur-md border rounded-2xl transition-all duration-300 w-8 h-12 sm:w-16 sm:h-24 md:w-20 md:h-28 shadow-lg ${
                 isWarning
                   ? "border-red-500/50 text-red-500 shadow-[0_0_15px_rgba(239,68,68,0.3)] animate-pulse-warning"
                   : "border-[#EEDEC5]/20 text-[#EEDEC5]"
               }`}
             >
-              <span className="text-2xl sm:text-4xl md:text-5xl font-black font-mono select-none">
+              <span className="text-lg sm:text-3xl md:text-5xl font-black font-mono select-none">
                 {digit}
               </span>
             </div>
           ))}
         </div>
-        <span className="text-[9px] sm:text-xs font-bold tracking-widest text-[#EEDEC5]/50 uppercase">
+        <span className="text-[8px] sm:text-xs font-bold tracking-wider sm:tracking-widest text-[#EEDEC5]/50 uppercase">
           {label}
         </span>
       </div>
@@ -82,11 +82,11 @@ export default function Counter({
         {/* Main Countdown Time Blocks */}
         <div className="flex items-center justify-center gap-1 sm:gap-2">
           {renderTimeBlock(pad(days), "Days")}
-          <div className="text-[#EEDEC5]/40 text-2xl sm:text-4xl md:text-5xl font-extrabold pb-5 sm:pb-6 animate-pulse select-none">:</div>
+          <div className="text-[#EEDEC5]/40 text-base sm:text-3xl md:text-5xl font-extrabold pb-3 sm:pb-5 md:pb-6 animate-pulse select-none">:</div>
           {renderTimeBlock(pad(hours), "Hours")}
-          <div className="text-[#EEDEC5]/40 text-2xl sm:text-4xl md:text-5xl font-extrabold pb-5 sm:pb-6 animate-pulse select-none">:</div>
+          <div className="text-[#EEDEC5]/40 text-base sm:text-3xl md:text-5xl font-extrabold pb-3 sm:pb-5 md:pb-6 animate-pulse select-none">:</div>
           {renderTimeBlock(pad(minutes), "Minutes")}
-          <div className="text-[#EEDEC5]/40 text-2xl sm:text-4xl md:text-5xl font-extrabold pb-5 sm:pb-6 animate-pulse select-none">:</div>
+          <div className="text-[#EEDEC5]/40 text-base sm:text-3xl md:text-5xl font-extrabold pb-3 sm:pb-5 md:pb-6 animate-pulse select-none">:</div>
           {renderTimeBlock(pad(seconds), "Seconds")}
         </div>
       </div>
