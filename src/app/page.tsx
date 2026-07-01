@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <Background>
       <div className="flex flex-col items-center justify-center gap-12 z-10 text-white">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-moralana uppercase tracking-wide sm:tracking-widest text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-white/75 drop-shadow-lg select-none py-4 leading-normal">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-moralana uppercase tracking-wide sm:tracking-widest text-center bg-clip-text text-transparent bg-gradient-to-b from-[#EEDEC5] to-[#EEDEC5]/75 drop-shadow-lg select-none py-4 leading-normal">
           Deployment in...
         </h1>
         
@@ -42,7 +42,7 @@ export default function Home() {
           fontWeight={900}
         />
         
-        <p className="text-sm md:text-base font-bold tracking-widest text-indigo-200/50 uppercase select-none animate-pulse">
+        <p className="text-sm md:text-base font-bold tracking-widest text-[#EEDEC5]/50 uppercase select-none animate-pulse">
           Time is ticking...
         </p>
       </div>
