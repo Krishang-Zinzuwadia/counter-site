@@ -57,7 +57,7 @@ export default function Counter({
           {digits.map((digit, i) => (
             <div
               key={i}
-              className={`relative overflow-hidden flex items-center justify-center bg-white/10 backdrop-blur-md border rounded-2xl transition-all duration-300 w-8 h-12 sm:w-16 sm:h-24 md:w-20 md:h-28 shadow-lg ${
+              className={`relative overflow-hidden flex items-center justify-center bg-white/10 backdrop-blur-md border rounded-2xl transition-all duration-300 w-10 h-15 sm:w-16 sm:h-24 md:w-20 md:h-28 shadow-lg ${
                 isWarning
                   ? "border-red-500/50 text-red-500 shadow-[0_0_15px_rgba(239,68,68,0.3)] animate-pulse-warning"
                   : "border-[#EEDEC5]/20 text-[#EEDEC5]"
@@ -82,11 +82,11 @@ export default function Counter({
         {/* Main Countdown Time Blocks */}
         <div className="flex items-center justify-center gap-1 sm:gap-2">
           {renderTimeBlock(pad(days), "Days")}
-          <div className="text-[#EEDEC5]/40 text-base sm:text-3xl md:text-5xl font-extrabold pb-3 sm:pb-5 md:pb-6 animate-pulse select-none">:</div>
+          <div className="text-[#EEDEC5]/40 text-xl sm:text-3xl md:text-5xl font-extrabold pb-4 sm:pb-5 md:pb-6 animate-pulse select-none">:</div>
           {renderTimeBlock(pad(hours), "Hours")}
-          <div className="text-[#EEDEC5]/40 text-base sm:text-3xl md:text-5xl font-extrabold pb-3 sm:pb-5 md:pb-6 animate-pulse select-none">:</div>
+          <div className="text-[#EEDEC5]/40 text-xl sm:text-3xl md:text-5xl font-extrabold pb-4 sm:pb-5 md:pb-6 animate-pulse select-none">:</div>
           {renderTimeBlock(pad(minutes), "Minutes")}
-          <div className="text-[#EEDEC5]/40 text-base sm:text-3xl md:text-5xl font-extrabold pb-3 sm:pb-5 md:pb-6 animate-pulse select-none">:</div>
+          <div className="text-[#EEDEC5]/40 text-xl sm:text-3xl md:text-5xl font-extrabold pb-4 sm:pb-5 md:pb-6 animate-pulse select-none">:</div>
           {renderTimeBlock(pad(seconds), "Seconds")}
         </div>
       </div>
