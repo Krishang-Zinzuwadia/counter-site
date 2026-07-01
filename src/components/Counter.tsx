@@ -63,7 +63,7 @@ export default function Counter({
                   : "border-[#EEDEC5]/20 text-[#EEDEC5]"
               }`}
             >
-              <span className="text-lg sm:text-3xl md:text-5xl font-black font-mono select-none">
+              <span className="text-2xl sm:text-4xl md:text-5xl font-black font-mono select-none">
                 {digit}
               </span>
             </div>
