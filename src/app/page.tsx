@@ -30,20 +30,12 @@ export default function Home() {
     <Background>
       <div className="flex flex-col items-center justify-center gap-12 z-10 text-white">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-moralana uppercase tracking-wide sm:tracking-widest text-center bg-clip-text text-transparent bg-gradient-to-b from-[#EEDEC5] to-[#EEDEC5]/75 drop-shadow-lg select-none py-4 leading-normal">
-          Deployment in...
+          deployed &lt;3
         </h1>
-        
-        <Counter
-          initialValue={initialTimerValue}
-          fontSize={100}
-          padding={8}
-          gap={16}
-          textColor="white"
-          fontWeight={900}
-        />
+
         
         <p className="text-sm md:text-base font-bold tracking-widest text-[#EEDEC5]/50 uppercase select-none animate-pulse">
-          Time is ticking...
+          did it somehow
         </p>
       </div>
     </Background>
